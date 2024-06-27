@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price List - Menu Makanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="judul">Price List - Menu Makanan</h1>
+    <div class="container">
+        <div class="form">
+            <h2>Tambah Menu Makanan</h2>
+            <input type="file" id="fileInput" accept="image/*">
+            <input type="text" id="namaInput" placeholder="Nama Makanan">
+            <input type="number" id="hargaInput" placeholder="Harga Makanan">
+            <textarea id="keteranganInput" placeholder="Keterangan (opsional)"></textarea>
+            <button onclick="addMenu()">Tambah Menu</button>
+        </div>
+    </div>
+    <div class="price-list">
+        <h2>Daftar Menu Makanan</h2>
+        <div id="menuList"></div>
+    </div>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Menu Makanan</h2>
+            <input type="file" id="editFileInput" accept="image/*">
+            <input type="text" id="editNamaInput" placeholder="Nama Makanan">
+            <input type="number" id="editHargaInput" placeholder="Harga Makanan">
+            <textarea id="editKeteranganInput" placeholder="Keterangan (opsional)"></textarea>
+            <button id="updateButton">Update Menu</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.judul {
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.form {
+    background-color: #2196F3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form h2 {
+    color: white;
+}
+
+input[type="file"],
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.price-list {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #4CAF50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price-list h2 {
+    color: white;
+}
+.menu-item {
+    display: flex;
+    align-items: center; /* Menyamakan tinggi elemen */
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    flex: 0 0 auto; /* Agar gambar tidak fleksibel */
+    width: 100px; /* Atur lebar gambar */
+    height: 100px; /* Atur tinggi gambar */
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.menu-item .menu-info {
+    flex: 1; /* Mengisi sisa ruang */
+}
+
+.menu-item h3 {
+    margin-top: 0;
+}
+
+.menu-item p {
+    margin-bottom: 5px;
+}
+
+/* Tambahkan CSS untuk modul edit */
+.modal {
+    display: none; /* Modul tidak ditampilkan secara default */
+    position: fixed; /* Tetap di tempat */
+    z-index: 1; /* Di atas konten lain */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Menambahkan scrolling jika perlu */
+    background-color: rgba(0,0,0,0.4); /* Warna latar belakang */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Letakkan di tengah */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Lebar konten */
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
